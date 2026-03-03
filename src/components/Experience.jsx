@@ -15,20 +15,21 @@ function Experience() {
   ]
 
   return (
-    <section id="experience" className="scroll-mt-24 py-24 px-6 bg-black text-white">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12">Experience</h2>
+    <section id="experience" className="scroll-mt-24 py-24 px-6">
+      <div className="max-w-6xl mx-auto">
+        <p className="section-kicker mb-4">Experience</p>
+        <h2 className="section-title mb-12">Hands-on, production-grade work</h2>
         <div className="space-y-6">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-black/30 border border-white/10 p-6 rounded shadow hover:shadow-lg transition transform hover:-translate-y-1"
+              className="bg-panel/70 border border-white/10 p-6 rounded-2xl shadow-lift hover:shadow-glow transition transform hover:-translate-y-1"
             >
-              <h3 className="text-xl font-semibold mb-2">{exp.company}</h3>
-              <p className="text-gray-300 mb-2">{exp.role} | {exp.duration}</p>
+              <h3 className="font-display text-xl font-semibold mb-2">{exp.company}</h3>
+              <p className="text-slate-300 mb-2">{exp.role} | {exp.duration}</p>
 
               {/* Responsibilities */}
-              <ul className="list-disc list-inside text-gray-400 text-sm mb-4">
+              <ul className="list-disc list-inside text-slate-400 text-sm mb-4">
                 {exp.responsibilities.map((item, idx) => (
                   <li key={idx}>{item}</li>
                 ))}

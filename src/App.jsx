@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="pt-24 bg-black text-white">
+      <main className="pt-24 text-slate-100">
         {/* Hero Section */}
         <Hero />
 

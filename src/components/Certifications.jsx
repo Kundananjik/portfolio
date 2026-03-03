@@ -19,15 +19,16 @@ function Certifications() {
   ]
 
   return (
-    <section id="certifications" className="scroll-mt-24 py-24 px-6 bg-gray-900 text-white">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12">Certifications</h2>
+    <section id="certifications" className="scroll-mt-24 py-24 px-6 bg-white/5 border-y border-white/10">
+      <div className="max-w-6xl mx-auto">
+        <p className="section-kicker mb-4">Credentials</p>
+        <h2 className="section-title mb-12">Certifications</h2>
 
         <div className="flex flex-wrap gap-3">
           {certifications.map((cert, idx) => (
             <span
               key={idx}
-              className="px-3 py-1 text-xs font-medium bg-white/10 text-white rounded-full border border-white/20"
+              className="px-3 py-1 text-xs font-medium bg-panel/70 text-white rounded-full border border-white/20"
             >
               {cert}
             </span>
